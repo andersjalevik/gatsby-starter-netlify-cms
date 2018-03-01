@@ -17,6 +17,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Bool1", name: "bool1", widget: "boolean", default: true}
 
   - name: "pages"
     label: "Pages"
@@ -28,10 +29,12 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Bool2", name: "bool2", widget: "boolean", default: true}
       - file: "src/pages/product/product.md"
         label: "Products Page"
         name: "products"
         fields:
+          - {label: "Bool3", name: "bool3", widget: "boolean", default: true}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
